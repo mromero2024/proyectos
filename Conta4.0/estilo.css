@@ -1,0 +1,377 @@
+:root{
+    --fPrincipa: 'Patrick Hand SC', cursive;
+    --fSecundaria: 'Major Mono Display', monospace;
+    --fFirma: 'Sacramento', cursive;
+    --colnegro: #343434;
+    --coltiza: #d8d8d6;
+    --colazul: #61697b;
+    --colindigo: #381c47;
+    --colceleste: #c4d2f3;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+    
+}
+
+*, ::before, *::after{
+    box-sizing: inherit;
+}
+
+
+
+
+@media(min-width: 700px){
+.header{
+     background-image: url(Imagenes/header.jpg);
+     height: 35rem;
+     background-position: center;
+     background-repeat: no-repeat;
+        background-size: cover;
+     background-color: rgb(70%, 70%, 70%);
+     background-blend-mode: soft-light;
+     border-bottom: 4px solid var(--colindigo);
+     
+}
+}
+
+.header{
+    background-image: url(Imagenes/header.jpg);
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(70%, 70%, 70%);
+    background-blend-mode: soft-light;
+    border-bottom: 4px solid var(--colindigo);
+}
+
+.navegacion{
+    text-align: end;
+    padding: 1.5rem 2rem;}
+
+.enlace{
+    text-decoration: none;
+    color: var(--indigo);
+    font-family: var(--fPrincipa);
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+.enlace:hover{
+    color: var(--colceleste);
+    transition: 0.3s ease;
+}
+.conta{
+    text-align: center;
+    color: var(--indigo);
+    font-family: var(--fSecundaria);
+    font-size: 3.5rem;
+    margin-top: 9rem;
+    margin-bottom: 0;
+}
+
+.eslogan{
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--fFirma);
+    color: var(--colnegro);
+    margin-top: 0;
+    
+}
+
+.eslogan-parrafo{
+    margin-top: 1.5rem;
+    
+}
+.hamburguesa{
+    opacity: 0;
+}
+.visible{
+    display: block;
+}
+
+
+@media(max-width: 500px){
+    .header{
+        display: grid;
+        grid-template-rows: 6rem auto auto;
+        height: auto;
+    }
+    .barra{
+        grid-row: 3 / 4;
+    }
+    .conta{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+    .eslogan-parrafo{
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+    .logo{
+        padding-bottom: 0;
+    }
+    .enlace{
+        display: block;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin: 0;
+        display: none;
+        
+    }
+    .hamburguesa{
+        color: var(--colazul);
+        font-size: 3rem;   
+        margin-bottom: 1.5rem;
+        opacity: 1;
+        border: none;
+        border-radius: 3px;
+    }
+    .hamburguesa:hover{
+        cursor: pointer;
+        color: var(--colindigo);
+        transition: 0.3s ease;
+    }
+    .visible{
+        display: block;
+    }
+    .navegacion{
+        text-align: center;
+    }
+    
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img{
+    width: 100%;
+    height: 20rem;
+}
+
+.rubros{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    
+}
+.rubro{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--fPrincipa);
+    background-color: cornsilk;
+    border-radius: 2rem;
+    margin: 2rem;
+    
+    
+}
+.titulo-rubros{
+    color: var(--colazul);
+    font-family: var(--fFirma);
+    font-size: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.marca{
+    width: 10rem;
+}
+
+.nosotros{
+    background-image: url(Imagenes/equipo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    background-color: rgb(10%, 10%, 10%);
+    background-blend-mode: soft-light;
+    padding-top: 2rem;
+}
+
+.texto-nosotros{
+    color: var(--colceleste);
+    font-size: 2rem;
+    font-family: var(--fSecundaria);
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.titulo-nosotros{
+    color: antiquewhite;
+    font-size: 3rem;
+    font-family: var(--fPrincipa);
+    text-align: center;
+    
+}
+.marcas{
+    text-align: center;
+   
+    
+}
+.marca{
+    margin: 1rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #381c47;
+    
+}
+
+.conta-footer{
+    text-align: center;
+    color: var(--colceleste);
+    font-family: var(--fSecundaria);
+    font-size: 2rem;
+    
+    
+}
+footer{background-color: #381c47;
+    border-top: 2px solid var(--colazul);}
+
+ .futer a{
+    color: #61697b;
+}
+.red{
+    font-size: 2rem;
+    color: var(--colceleste);
+    margin: 0.5rem;
+    
+}
+.di{
+    text-align: center;
+}
+
+.slider{
+    
+    height: 35rem;
+    position: relative;
+    display: flex;
+    transition: all 0.5s;
+    overflow: hidden;
+    padding: 3rem 0;
+    margin-top: 4rem;
+    max-width: 120rem;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    list-style: none;
+}
+.slide{
+    width: 10%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 10rem;
+    transition: 0.7s;
+    border-radius: 1rem;
+    box-shadow: -8px 8px 20px black;
+    
+    
+}
+.slide:nth-child(1){
+    background-image: url(Imagenes/Ignacio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slide:nth-child(2){
+    background-image: url(Imagenes/Juana.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slide:nth-child(3){
+    background-image: url(Imagenes/Marcela.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slide:nth-child(4){
+    background-image: url(Imagenes/Marta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slide:nth-child(5){
+    background-image: url(Imagenes/Pancho.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slide:nth-child(6){
+    background-image: url(Imagenes/Juana.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slide:hover{
+    width: 30%;
+    cursor: pointer;
+}
+
+.galeria{
+    background-color: #021550;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23030752' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%230f0354' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%231f0456' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23300458' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%2342055A' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23440451' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23440349' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%2340023d' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%2337022f' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%232E0122' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 10rem;
+    
+}
+
+.formulario{
+    max-width: 120rem;
+    width: 30%;
+    margin: 0rem auto;
+    background-color: #696868;
+    height: 30rem;
+    padding-top: 2rem;
+    border-radius: 1.5rem;
+    background-color: #080808;
+    padding: 2rem;
+    box-shadow: -8px 8px 8px black;
+    
+}
+.form{
+    background-color: rgb(22, 19, 31);
+    padding: 3rem 0;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.input{
+    width: 70%;
+    margin: 0 auto;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(206, 202, 202);
+    
+}
+.titulo-formulario{
+    text-align: center;
+    color: aqua;
+    font-family: var(--fSecundaria);
+}
+
+::placeholder{
+    color: #021550;
+    font-size: 1.5rem;
+    font-family: var(--fPrincipa);
+    padding-left: 0.5rem;
+}
+
