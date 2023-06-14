@@ -1,0 +1,330 @@
+/*----------GLOBALES---------------*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, * ::after{
+    box-sizing: border-box;
+}
+:root{  
+    --fuente3: 'Montserrat', sans-serif;
+    --fuente5: 'Nunito', sans-serif;
+    --fuente6: 'Quicksand', sans-serif;
+    --celeste: #9dc1ce;
+    --verde: #ecfcc7;
+    --negro: #131313;
+    --negroClaro: #232323;
+    --blanco: #f3f0f1;
+}
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #c5ee2f;
+}
+.contenedor{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/*------------FIN GLOBALES------------------*/
+
+
+
+/*----------------PRINCIPAL-----------------*/
+.principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00FFCA;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2380ffe5'/%3E%3Cstop offset='1' stop-color='%2380ffe5' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2308aab0'/%3E%3Cstop offset='1' stop-color='%2308aab0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234abfee'/%3E%3Cstop offset='1' stop-color='%234abfee' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300FFCA'/%3E%3Cstop offset='1' stop-color='%2300FFCA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230A4D68'/%3E%3Cstop offset='1' stop-color='%230A4D68' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.img-principal{
+    width: 100%;
+    overflow: hidden;
+}
+.txt-principal{
+    width: 50%;
+    font-family: var(--fuente6);   
+}
+.img-principal img{
+    height: 100vh;
+    clip-path: circle(50% at 55% 50%);  
+    position: relative;
+    z-index: 10;
+}
+.asimetrico {
+    position: absolute;
+    bottom: -20rem;
+    left: 50rem;
+    width: 80%;
+    height: 100rem;
+    stroke: black;
+    stroke-width: 1px;     
+}
+.as2{
+    z-index: 10;
+    bottom: -600px;
+    height: 200rem;
+    clip-path: inset(0 50% 0 0);   
+}
+.texto{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color:#263A29;
+}
+.palabraClave{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 6rem;
+    font-family: var(--fuente5);
+    color: #41644A;   
+}
+/*--------------FIN PRINCIPAL-----------------------*/
+
+
+/*---------------PRACTICAS---------------*/
+.practicas{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 2px solid #3dd;
+    border-radius: 10px;
+    padding: 2rem;
+    position: absolute;
+    left: 7%;
+    bottom: 0;
+    font-size: 1.8rem;
+    font-family: var(--fuente5);
+    margin-bottom: 3.5rem;
+    color: rgb(58, 55, 55); 
+    /*background-color: #131313;*/
+    background-color: #ecf1fa;
+    z-index: 20;
+}
+.practica:hover{
+    color: #4400ff;
+    cursor: pointer;  
+}
+i{
+    color: #4400ff;
+    margin-right: 0.8rem;
+}
+.prac{
+    display: flex;
+}
+/*-----------------FIN PRACTICAS------------*/
+
+
+
+/*----------------MAIN--------------------*/
+main{
+    background-image: url(oto/patternpad.svg);
+}
+.frase{
+    font-size: 5rem;
+    color: #131313;
+    font-family: var(--fuente5);
+    font-weight: 100;
+    width: 50%;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    background-color: #d9fcf4;
+    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 77% 23% 42% 58% / 75% 45% 55% 25% ;
+    
+}
+.parrafo{
+    width: 50rem;
+    font-size: 2rem;
+    font-family: var(--fuente3);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 2px solid rgb(172, 169, 169);
+    position: relative;
+    margin: 0 auto;
+}
+.parrafos{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+.parrafo h4{
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+.parrafo p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    color: #646464;
+    margin-left: 1rem;
+}
+.forma{
+    position: absolute;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+    
+}
+.via{
+    display: flex;    
+}
+.via i{
+    color: #131313;
+    width: 20px;
+    text-align: center;
+    
+}
+/*-------------------FIN DEL MAIN---------------*/
+
+
+
+/*------------------SECCION CIERRE--------------*/
+
+.cierre{
+    background-color: #131313;
+    display: flex;
+    padding: 3rem;
+}
+.titulo-cierre{   
+    color: #d9fcf4;  
+    margin: 0;  
+    font-size: 3rem;
+    font-family: var(--fuente5);
+    font-weight: 100;
+    padding: 2rem;
+    padding-right: 3rem;
+}
+.cierre1{
+    width: 50%;
+}
+.titulo-cierre strong{
+    font-weight: 600;
+}
+.mas{
+    width: 50%;
+    color: #00FFCA;
+    font-size: 2rem;
+    font-family: var(--fuente3);
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #1c2725;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mas strong{
+    text-decoration: underline;
+}
+
+.txt-cierre{ 
+    text-align: center;
+}
+
+.estrellas{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto;    
+}
+.estrellas i{
+    color: #c5ee2f;
+    
+}
+button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 255, 93);
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    width: 20%;
+  }
+  
+  button:hover {
+    background: rgb(61, 255, 71);
+    box-shadow: 0 0 30px 5px rgba(62, 240, 38, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  button i{
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+/*---------FIN CIERRE------------*/
+
